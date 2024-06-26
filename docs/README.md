@@ -1,7 +1,3 @@
-# DScriptPulse
-> MinecraftJava Paper 服务器 JS 脚本引擎
-
-### 介绍
 本引擎作为一个中间层，允许您通过 JavaScript 语言来编写 Paper 服务器插件，并且可以通过调用间歇泉的 API 发送基岩版表单。  
 您可以将本引擎看做是对 [LLSE](https://github.com/LiteLDev/LegacyScriptEngine) 的模仿，当前，目前的 API 和功能要远少于 [LLSE](https://github.com/LiteLDev/LegacyScriptEngine)。  
 目前，本引擎仍处于开发阶段，请勿用于生产环境。
