@@ -2,21 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>DScriptPulse</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">加载中...</div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
+      name: 'DScriptPulse Docs',
+      repo: 'https://github.com/PayaHai/DScriptPulse',
+      loadSidebar: '../summary.md',
+      subMaxLevel: 1,
+      autoHeader: true,
+      basePath: "/docs",
+
+      copyCode: {
+        buttonText: '点击复制',
+        errorText: '错误',
+        successText: '复制成功',
+      },
+
+      count:{
+        language:'chinese',
+      },
+
+      search: {
+        noData: '没有找到结果',
+        placeholder: '搜索文档',
+      }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- 语法高亮 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-xml.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-js.min.js"></script>
+  <!-- 快速复制 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- 字数统计 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <!-- 搜索 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//polyfill.io/v3/polyfill.min.js?features=String.prototype.normalize"></script>
 </body>
 </html>
